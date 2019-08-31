@@ -1,0 +1,19 @@
+prefix=/home/thomas/Qt4.8.4_arm
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/QtScript
+qt_config=lex yacc uic resources qt release incremental link_prl cross_compile def_files_disabled no_mocdepend release stl qt_no_framework silent cross_compile system-sqlite release shared dll embedded stl exceptions_off dylib create_prl link_prl depend_includepath QTDIR_build qt_install_headers qt depend_includepath qmake_cache target_qt hide_symbols create_pc create_libtool explicitlib building-libs standalone_package depend_includepath moc thread shared dll
+moc_location=/home/thomas/Qt4.8.4_arm/bin/moc
+uic_location=/home/thomas/Qt4.8.4_arm/bin/uic
+rcc_location=/home/thomas/Qt4.8.4_arm/bin/rcc
+lupdate_location=/home/thomas/Qt4.8.4_arm/bin/lupdate
+lrelease_location=/home/thomas/Qt4.8.4_arm/bin/lrelease
+
+Name: Qtscript
+Description: Qtscript Library
+Version: 4.8.4
+Libs: -L${libdir} -lQtScript 
+Libs.private: -L/home/thomas/Qt4.8.4_arm/lib  -lQtCore -L/home/thomas/Qt4.8.4_arm/lib -lpthread   
+Cflags: -DQT_SHARED -I/home/thomas/Qt4.8.4_arm/include -I${includedir}
+Requires: QtCore
+
